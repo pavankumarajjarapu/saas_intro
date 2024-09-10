@@ -1,0 +1,88 @@
+.login {
+  color: blueviolet;
+}
+
+.signup {
+  color: aquamarine;
+}
+
+body {
+  background-color: azure;
+}
+
+h1 {
+  color: rgba(34, 5, 80, 0.418);
+  font-size: 30px;
+  font-family: serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  color: rgba(67, 67, 218, 0.719);
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+form label {
+  color: rgb(14, 222, 14);
+  font-family: monospace;
+  font-size: 20px;
+}
+form div label {
+  color: red;
+  font-family: cursive;
+}
+form div nav label {
+  color: rgb(66, 3, 3);
+  font-family: fantasy;
+}
+
+#b1 {
+  color: rgb(75, 3, 18);
+  font-family: monospace;
+  font-size: 20px;
+  width: 120px;
+  margin: 20px;
+  border: 3px solid rgb(59, 57, 57);
+  border-radius: 3px;
+}
+
+#b2 {
+  color: rgb(75, 3, 18);
+  font-family: monospace;
+  font-size: 20px;
+  width: 120px;
+  margin: 20px;
+  border: 3px solid rgb(59, 57, 57);
+  border-radius: 3px;
+}
+
+#b3 {
+  color: green;
+  font-family: monospace;
+  font-size: 15px;
+  width: 150px;
+  margin: 20px;
+  border: 3px solid rgb(59, 57, 57);
+  border-radius: 3px;
+  background-color: rgb(245, 239, 229);
+}
+
+#b4 {
+  color: red;
+  font-family: monospace;
+  font-size: 30px;
+  width: 200px;
+  margin: 20px;
+  border: 3px solid rgb(59, 57, 57);
+  border-radius: 3px;
+  background-color: rgb(245, 239, 229);
+}
+
+h1 {
+  background-color: rgba(87, 93, 107, 0.5725490196);
+  color: #d2e1dd;
+}
+
+/*# sourceMappingURL=style.css.map */

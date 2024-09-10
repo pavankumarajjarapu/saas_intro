@@ -1,0 +1,99 @@
+@import "./login";
+@import "./signup";
+
+$mainHeadingColor:rgba(34, 5, 80, 0.418);
+$mainHeadingFontSize:30px !default;
+$mainHeadingFontFamily:serif;
+$paragraphColor:rgba(67, 67, 218, 0.719);
+$paragraphFontSize:30px;
+$textAlign:center;
+$paragraphFontFamily:fantasy;
+body{
+    background-color:azure;
+}
+h1{
+    color: $mainHeadingColor;
+    font-size: $mainHeadingFontSize;
+    font-family:$mainHeadingFontFamily ;
+    text-align: $textAlign;
+    font-size: 3rem;
+
+}
+p{
+    color: $paragraphColor;
+    font-size: $paragraphFontSize;
+    font-family: $paragraphFontFamily;
+}
+form{
+    label{
+        color: rgb(14, 222, 14);
+        font-family: monospace;
+        font-size:  20px ;
+    }
+    div{
+        label{
+            color: red;
+            font-family: cursive;
+        }
+        nav{
+            label{
+                color: rgb(66, 3, 3);
+                font-family: fantasy;
+               
+            }
+        }
+    }
+}
+@mixin buttonStyle(){
+    color: rgb(75, 3, 18);
+    font-family: monospace;
+    font-size: 20px;
+    width: 120px;
+    margin: 20px;
+    border: 3px solid  rgb(59, 57, 57);
+    border-radius:  3px;
+}
+#b1{
+   @include buttonStyle()
+}
+#b2{
+    @include buttonStyle()
+}
+@mixin buttonStyleWithParameters($fs,$wd,$c){
+    color: $c;
+    font-family: monospace;
+    font-size: $fs;
+    width: $wd;
+    margin: 20px;
+    border: 3px solid  rgb(59, 57, 57);
+    border-radius:  3px;
+    background-color: rgb(245, 239, 229);
+    
+}
+#b3{
+    @include buttonStyleWithParameters(15px,150px ,green )
+}
+#b4{
+    @include buttonStyleWithParameters(30px,200px ,red )
+}
+$light-background: #c4f6f9;
+$light-text: #036;
+$dark-background: #575d6b92;
+$dark-text: #d2e1dd;
+
+@mixin theme-colors($light-theme) {
+  @if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+
+
+    color: $dark-text;
+  }
+}
+
+h1 {
+  @include theme-colors(false);
+
+}
